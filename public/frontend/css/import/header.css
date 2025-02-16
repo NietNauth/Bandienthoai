@@ -1,0 +1,214 @@
+/*HEADER*/
+#header-wp{
+    border-bottom: 1px solid #cecece;
+}
+#header-wp.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1050;
+    background: #be1e2d;
+}
+#logo{
+    display: block;
+    padding: 15px 0px;
+}
+#main-content-wp{ margin-top: 80px;}
+
+/*#main-menu{ padding-left: 120px;}*/
+#main-menu li{ float: left;}
+#main-menu li a{
+    display: block;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 30px 25px;
+    color: #fff;
+}
+#action-wp #search-wp .btn{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    line-height: 20px;
+    background: transparent;
+    padding: 30px 15px;
+    color: #fff;
+}
+#action-wp #cart-wp #btn-cart{
+    position: relative;
+    display: block;
+    padding: 30px 15px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+}
+#action-wp #cart-wp #btn-cart #num{
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    font-size: 13px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 50%;
+    background: #b4666c;
+    color: #fff;
+    font-family: 'Roboto Condensed Bold';
+}
+#main-menu > li{ position: relative;}
+#main-menu .sub-menu{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    background: #fff;
+}
+#main-menu .sub-menu li a{
+    position: relative;
+    display: block;
+    width: 200px;
+    padding: 12px 15px;
+    font-size: 14px;
+    text-transform: capitalize;
+    background: #fff;
+    color: #000;
+    border-bottom: 1px dashed #cccccc;
+}
+#main-menu .sub-menu li a:before{
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 0%;
+    background: #b4666c;
+    top: 0;
+    left: 0;
+    transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+#main-menu .sub-menu li a:hover:before{ height: 100%;}
+#main-menu .sub-menu li a:hover{ background: #f1f1f1;}
+#main-menu .sub-menu li:last-child a{ border-bottom: none;}
+#main-menu > li:hover .sub-menu{ display: block;}
+#main-menu li .arrow{
+    position: absolute;
+    top: 34px;
+    right: 10px;
+    color: #333;
+    font-size: 12px;
+}
+
+#action-wp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px; 
+}
+
+#user-wp {
+    display: flex;
+    align-items: center;
+}
+
+#user-wp .user-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 5px;
+    transition: color 0.3s;
+}
+
+#user-wp .user-link:hover {
+    color: #007bff;
+}
+
+.search-result {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    visibility: hidden;
+    border-radius: 0 0 10px 10px;
+}
+
+.search-result ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.search-result ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background 0.3s;
+}
+
+.search-result ul li img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-result ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.search-result ul li:hover {
+    background: #f8f9fa;
+}
+
+.search-result ul li a:hover {
+    color: #007bff;
+}
+
+.search-result ul {
+    scrollbar-width: thin;
+    scrollbar-color: #007bff #f1f1f1;
+}
+
+.search-result ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+.search-result ul::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 4px;
+}
+
+.search-result ul::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+#slider-wp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider-wp .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slider-wp .item img{
+    max-width: 100%;
+    height: 525px;
+}
